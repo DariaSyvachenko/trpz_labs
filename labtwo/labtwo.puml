@@ -1,0 +1,73 @@
+@startuml
+class Project{
+- projectId: int
+- userId: int
+- projectName: string
+- projectDescription: string
+- startDate: date
+- endDate: date
++ getProjectDetails(): string
++ setProjectManager(manager: User)
+
+}
+class Task{
+- taskId: int
+- userId: int
+- projectId: int
+- taskName: string
+- taskDescription: string
+- status: enum
+- startDate: date
+- endDate: date
++ getTaskDetails(): string
++ assignTask(assignee: User)
++ updateTaskStatus(newStatus: enum)
++ addComment(comment: Comment)
+}
+class User{
+- userId: int
+- username: string
+- email: string
+- role: enum
++ getUserDetails(): string
++ assignTask(task: Task)
++ allocateResource(resource: Resource)
+}
+class Resource{
+- resourceId: int
+- userId: int
+- resourceName: string
+- resourceType: string
+- availability: boolean
++ getResourceDetails(): string
+}
+class Comment{
+- commentId: int
+- userId: int
+- taskId: int
+- commentText: string
+- createdBy: User
+- createdDate: date
++ getCommentDetails(): string
+}
+class Manager{
+-ManagerId:int
+- username: string
+- email: string
++ addTask(task: Task)
++ removeTask(taskId: int)
++ addTeam(team: Users)
++ removeTeam(team: Users)
++ addRole(role: Users)
++ getControlTask(task: Task)
+}
+Project -- User : "n" -- "n" : User
+Project *-- Task : "1" -- "*" : Task
+User *-- Resource : "1" -- "*" : Resource
+Task *-- Comment : "1" -- "*" : Comment
+User *-- Comment : "1" -- "*" : Comment
+User *-- Task : "1" -- "*" : Task
+Manager -- User : "n" -- "n" : User
+Manager -- Task : "n" -- "n" : Task
+@enduml
+
