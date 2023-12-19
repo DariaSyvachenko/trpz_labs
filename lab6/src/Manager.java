@@ -20,7 +20,8 @@ public class Manager {
     }
 
     public void removeTask(int taskId) {
-        managedTasks.remove(taskId);
+        // Пошук і видалення завдання за ID
+        managedTasks.removeIf(task -> task.getTaskId() == taskId);
 
     }
 
