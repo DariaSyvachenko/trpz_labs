@@ -37,5 +37,12 @@ public class Project {
     private void sendNotification(User manager) {
         System.out.println("Notification sent to " + manager.getUsername() + " about the manager assignment to the project");
     }
+    public List<Task> getTasks() {
+        return tasks;
+    }
+
+    public void setTasks(List<Task> tasks) {
+        this.tasks = tasks;
+    }
 }
 

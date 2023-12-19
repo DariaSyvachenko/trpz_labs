@@ -3,7 +3,6 @@ public enum TaskStatus {
     IN_PROGRESS,
     DONE,
     ON_HOLD,
-    CANCELED,
-    URGENT
+    CANCELED
 }
 
