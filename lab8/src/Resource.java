@@ -1,4 +1,4 @@
-public class Resource {
+public class Resource implements Component {
     private int resourceId;
     private int userId;
     private String resourceName;
@@ -17,6 +17,10 @@ public class Resource {
     public String getResourceDetails() {
 
         return "Resource details";
+    }
+    @Override
+    public String showDetails() {
+        return getResourceDetails();
     }
 }
 

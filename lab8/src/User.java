@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class User {
+public class User implements Component{
     private int userId;
     private String username;
     private String email;
@@ -40,9 +40,9 @@ public class User {
             assignedTasks = new ArrayList<>();
         }
         assignedTasks.add(task);
+        task.assignTask(this); // Передача користувача у завдання
+
     }
-
-
 
     public void allocateResource(Resource resource) {
         if (resources == null) {
@@ -51,6 +51,10 @@ public class User {
         resources.add(resource);
         resource.setUser(this); // Передача користувача ресурсу
 
+    }
+    @Override
+    public String showDetails() {
+        return getUserDetails();
     }
 }
 

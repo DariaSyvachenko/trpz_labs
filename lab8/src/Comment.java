@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class Comment {
+public class Comment implements Component {
     private int commentId;
     private int userId;
     private int taskId;
@@ -20,5 +20,9 @@ public class Comment {
         details.append("Created Date: ").append(createdDate).append("\n");
 
         return details.toString();
+    }
+    @Override
+    public String showDetails() {
+        return getCommentDetails();
     }
 }

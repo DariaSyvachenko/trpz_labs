@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7eaa1d39-6347-4f39-ab9e-d9d26f0a7ea8" name="Changes" comment="перероблений звіт" />
+    <list default="true" id="7eaa1d39-6347-4f39-ab9e-d9d26f0a7ea8" name="Changes" comment="перероблений звіт">
+      <change afterPath="$PROJECT_DIR$/lab7/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab7/src/ProjectManagementFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab7/src/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/лаб7.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/lab7/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/src/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab7/src/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/src/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab7/src/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/src/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab7/src/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/src/Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab7/src/Resource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/src/TaskStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab7/src/TaskStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab7/src/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/src/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab7/src/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/лаб5.pdf" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,21 +80,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Home\IdeaProjects\trpz_labs\labtwo" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="trpz_labs" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="trpz_labs" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
