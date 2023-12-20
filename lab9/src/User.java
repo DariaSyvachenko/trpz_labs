@@ -40,9 +40,9 @@ public class User {
             assignedTasks = new ArrayList<>();
         }
         assignedTasks.add(task);
+        task.assignTask(this); // Передача користувача у завдання
+
     }
-
-
 
     public void allocateResource(Resource resource) {
         if (resources == null) {
